@@ -21,4 +21,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 BOARD_VENDOR_SEPOLICY_DIRS += \
     vendor/xiaomi/camera/sepolicy/vendor
 
+# Shims
+PRODUCT_PACKAGES += \
+    libgui_shim_miuicamera
+
 $(call inherit-product, vendor/xiaomi/camera/camera-vendor.mk)
